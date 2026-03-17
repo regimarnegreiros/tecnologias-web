@@ -93,7 +93,7 @@ a {
 }
 
 #msg-ola-aluno {
-    margin: 30px 30px 0px 30px;
+    margin: 30px 30px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
