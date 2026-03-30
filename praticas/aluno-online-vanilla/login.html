@@ -8,20 +8,45 @@
 </head>
 <body>
     <main>
-        <img src="public/learn.svg" alt="Capelo">
-        <h1>Aluno Online</h1>
-        <form action="" method="get">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-            <p>O campo de email é obrigatório.</p>
-            <label for="fsenha">Senha</label>
-            <input type="text" id="senha" name="senha">
-            <p>O campo de senha é obrigatório.</p>
+        <header>
+            <img src="public/learn.svg" alt="Capelo">
+            <h1>Aluno Online</h1>
+        </header>
+
+        <form id="loginForm" novalidate>
+            <label for="email">E-mail</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Digite seu e-mail"
+            />
+            <p 
+                id="error-email" 
+                class="error-message" 
+                aria-live="polite"
+            ></p>
+
+            <label for="senha">Senha</label>
+            <input 
+                type="password" 
+                id="senha" 
+                name="senha" 
+                placeholder="Digite sua senha"
+            />
+            <p 
+                id="error-senha" 
+                class="error-message" 
+                aria-live="polite"
+            ></p>
+            
+            <button type="submit">Entrar</button>
         </form>
-        <button>Entrar</button>
     </main>
+
     <footer>
-        <p>© 2026. Todos os direitos reservados.</p>
+        <p>&copy; 2026. Todos os direitos reservados.</p>
     </footer>
+    <script src="src/main.js"></script>
 </body>
 </html>
