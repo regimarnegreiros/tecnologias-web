@@ -1,12 +1,10 @@
-// import './style.css'
+import './style.css'
 
 const loginForm = document.getElementById('loginForm');
 const emailInput = document.getElementById('email');
 const senhaInput = document.getElementById('senha');
 const emailError = document.getElementById('error-email');
 const senhaError = document.getElementById('error-senha');
-
-console.log("Hello Wordl")
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -28,6 +26,7 @@ loginForm.addEventListener('submit', (event) => {
     }
 
     if (formValido) {
-        alert('Login realizado com sucesso!');
+        // alert('Login realizado com sucesso!');
+        window.location.href = './index.html'
     }
 });
